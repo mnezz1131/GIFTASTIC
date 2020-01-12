@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../GIFTASTIC/Assets/CSS/style.css">
 
     <title>GIFTASTIC Cartoons</title>
 </head>
+
 <body>
     <div class="container">
-        <div id = cartoonButtons>
-
-
-
+        <div id=cartoonButtons>
+            <h1>My Favorite Cartoon Characters</h1>
+            <!-- Cartoons will get dumped here -->
+            <div id="buttons-view"></div>
+            <form id="cartoon-form">
+                <label for="cartoon-input">Add Your Favortite Cartoon Character!</label>
+                <input type="text" id="cartoon-input">
+                <br>
+                <!-- Button triggers new movie to be added -->
+                <input id="add-cartoon" type="submit" value="Add a Character">
+            </form>
+           <!-- We'll be dumping our JSON contents in here -->
+             <div id="movie-view"></div>
+            
+               <!-- Gifs will appear here -->
+            </div>
+            <div id="gifs-appear-here">
+            </div>
 
         </div>
     </div>
-    
-
-
-
-
-
-
-
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="../GIFTASTIC/Assets/JS/giphy.js"></script>
 
 </body>
+
 </html>
