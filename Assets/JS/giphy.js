@@ -4,7 +4,7 @@ $(document).ready(function () {
 });
 
 // Variables for the website
-var topics = ["Butters", "Bugs Bunny", "Snoopy", "Donald Duck", "Powerpuff Girls", "Fred Flintstone", "Bart Simpson", "Scooby Doo", "Spongebob", "Tigger", "Stewie Griffin", "Pink Panther", "Metalocalypse"];
+var topics = ["Butters", "Bugs Bunny", "Snoopy", "Stimpy", "Donald Duck", "Powerpuff Girls", "Fred Flintstone", "Bart Simpson", "Scooby Doo", "Spongebob", "Tigger", "Stewie Griffin", "Pink Panther", "Metalocalypse"];
 // This is My API key
 var APIKey = "RBvbkTz8S3Uy5xCmLpFZyIdDzlUOK63E";
 
@@ -16,12 +16,11 @@ function renderButtons() {
     // Loop through the array of movies, then generate buttons for each movie in the array
     for (var i = 0; i < topics.length; i++) {
         var button = $("<button>");           //Making a button for each item in the array
-        button.addClass("cartoonButton");     // Adds a class of cartoonButton to thebutton
+        button.addClass("cartoonButton");  
+       
             // Added a data-attribute
         button.attr("data-name",topics[i]);
-        button.attr("data-still",topics[i]);   //Adding all these data attributes to the button
-        button.attr("data-state",topics[i]);
-        button.attr("data-animate",topics[i]);
+       
          // Provided the initial button text
         button.text(topics[i]);
       // Added the button to the buttons-view div
@@ -46,7 +45,7 @@ $("#add-cartoon").on("click", function (event) {
 });
 // Calling the renderButtons function to display the initial list of movies
 renderButtons();
-
+//==========================================================================================================================================
 
 //Sets up onclick function for when cartoonButton is clicked
     $("button").on("click", function() {
@@ -73,10 +72,12 @@ renderButtons();
            // console.log(rating);
             var p = $("<p>").text("Rating: " + rating); //creates a <p> block in the HTML for the rating
            
-            
             var cartoonImage = $("<img>");   //creates an <img> tag on HTML 
-            cartoonImage.attr("src", results[i].images.fixed_height_still.url);  //Sets the attribute to the 
-
+            cartoonImage.attr("src", results[i].images.fixed_height_still.url); 
+            cartoonImage.attr("data-still",results[i].images.fixed_height_still.url); //Sets the attribute to the 
+            cartoonImage.attr("data-animate", results[i].images.fixed_height.url);  //Sets the attribute to the 
+            cartoonImage.attr("data-state","still");
+           cartoonImage.addClass("gif")
             gifDiv.prepend(p);
             gifDiv.prepend(cartoonImage);
 
@@ -84,4 +85,32 @@ renderButtons();
           }
         });
     });
+//=======================================================================================================================================================
 
+$(".gif").on("click", function() {
+    
+  
+  var state = $(this).attr("data-state");
+ 
+  // STEP THREE: Check if the variable state is equal to 'still',
+  // then update the src attribute of this image to it's data-animate value,
+  // and update the data-state attribute to 'animate'.
+ if(state === "still") {
+   var animateVal = $(this).attr("data-animate");
+  $(this).attr("src", animateVal);
+    $(this).attr("data-state", "animate");
+  } else {
+  // If state is equal to 'animate', then update the src attribute of this
+  // image to it's data-still value and update the data-state attribute to 'still'
+  // ============== FILL IN CODE HERE FOR STEP THREE =========================
+   var stillVal = $(this).attr("data-still");
+   $(this).attr("src", stillVal);
+    $(this).attr("data-state", "still");
+}
+  // CODE GOES HERE
+  // ==============================================
+  // STEP FOUR: open the file in the browser and click on the images.
+  // Then click again to pause.
+});
+
+   //=================================================================================================================================================================

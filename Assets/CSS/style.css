@@ -4,16 +4,53 @@
 
 h1{
     font-family: 'Modak', cursive; 
-    font-size: 60px;
+    font-size: 75px;
     text-align: center;
     color: coral;
     text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;
 
 }
+#add{
+color: coral;
+font-size: 35px;
+text-shadow:
+-2px -2px 0 rgb(8, 8, 8),
+2px -2px 0 rgb(7, 7, 7),
+-2px 2px 0 rgb(5, 5, 5),
+2px 2px 0 rgb(5, 0, 0);
+font-weight: bolder;
+}
+  
+#buttons-view{
+   text-align: center;
+}
+#cartoon-form{
+    text-align: center;
+}
+#gifs-appear-here{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
+
+p{
+    font-weight: 900;
+color: crimson;
+
+text-shadow:
+-1px -1px 0 rgb(8, 8, 8),
+1px -1px 0 rgb(7, 7, 7),
+-1px 1px 0 rgb(5, 5, 5),
+1px 1px 0 rgb(5, 0, 0);
+}
 body{
+background-image: url(../Images/back.jpg);
+    background-size: ;
+    
 }
