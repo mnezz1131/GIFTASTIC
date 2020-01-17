@@ -54,3 +54,26 @@ $.ajax({
      // $("#giphy-view").text(JSON.stringify(response));
     });
 });
+
+
+//callback function 
+
+function usedLater (){
+    alert("I was created and called in a button - I can be used mutlitple times in many places")
+}
+
+
+//use it in an html , js file etc. 
+
+//Event Function : awaitng for an event (or action) to occur - in order to execute 
+
+//function(e)
+//function(event)
+
+onClick
+onload
+
+$("whatClassOrId").on("the event", function(){
+    alert("Once a button is clicked i will be excuted - but ONLY when a button is clicked")
+})
+
