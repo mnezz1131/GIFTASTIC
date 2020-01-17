@@ -42,12 +42,13 @@ font-weight: bolder;
 p{
     font-weight: 900;
 color: crimson;
+font-size: 34px;
 
 text-shadow:
--1px -1px 0 rgb(8, 8, 8),
-1px -1px 0 rgb(7, 7, 7),
--1px 1px 0 rgb(5, 5, 5),
-1px 1px 0 rgb(5, 0, 0);
+-1px -1px 0 rgb(250, 246, 246),
+1px -1px 0 rgb(253, 249, 249),
+-1px 1px 0 rgb(252, 250, 250),
+1px 1px 0 rgb(240, 235, 235);
 }
 body{
 background-image: url(../Images/back.jpg);
