@@ -1,37 +1,68 @@
-.cartoonButton{
-    margin-right: 10px;
+* {
+    box-sizing: border-box;
 }
 
-h1{
-    font-family: 'Modak', cursive; 
-    font-size: 75px;
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.cartoonButton {
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+
+#buttons-view {
+    width: auto;
+}
+
+#gifs-appear-here {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1 {
+    font-family: 'Modak', cursive;
+    font-size: 79px;
     text-align: center;
     color: coral;
-    text-shadow:
-		-2px -2px 0 #000,
-		2px -2px 0 #000,
-		-2px 2px 0 #000,
-		2px 2px 0 #000;
+    text-shadow: 0 1px 0 #bbb,
+        0 2px 0 rgb(19, 14, 14),
+        0 3px 0 rgb(73, 60, 60),
+        0 4px 0 rgb(43, 31, 31),
+        0 5px 0 rgb(65, 48, 48),
+        0 6px 1px #000,
+        0 0px 3px #000,
+        0 1px 3px #000,
+        0 3px 5px #000,
+        0 5px 10px #000,
+        0 5px 20px #000;
 
 }
-#add{
-color: coral;
-font-size: 35px;
-text-shadow:
--2px -2px 0 rgb(8, 8, 8),
-2px -2px 0 rgb(7, 7, 7),
--2px 2px 0 rgb(5, 5, 5),
-2px 2px 0 rgb(5, 0, 0);
-font-weight: bolder;
+
+#add {
+    color: coral;
+    font-size: 35px;
+    text-shadow:
+        -2px -2px 0 rgb(8, 8, 8),
+        2px -2px 0 rgb(7, 7, 7),
+        -2px 2px 0 rgb(5, 5, 5),
+        2px 2px 0 rgb(5, 0, 0);
+    font-weight: bolder;
 }
-  
-#buttons-view{
-   text-align: center;
-}
-#cartoon-form{
+
+#buttons-view {
     text-align: center;
 }
-#gifs-appear-here{
+
+#cartoon-form {
+    text-align: center;
+}
+
+#gifs-appear-here {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -39,19 +70,64 @@ font-weight: bolder;
 }
 
 
-p{
+p {
     font-weight: 900;
-color: crimson;
-font-size: 34px;
+    color: crimson;
+    font-size: 34px;
 
-text-shadow:
--1px -1px 0 rgb(250, 246, 246),
-1px -1px 0 rgb(253, 249, 249),
--1px 1px 0 rgb(252, 250, 250),
-1px 1px 0 rgb(240, 235, 235);
+    text-shadow:
+        -1px -1px 0 rgb(250, 246, 246),
+        1px -1px 0 rgb(253, 249, 249),
+        -1px 1px 0 rgb(252, 250, 250),
+        1px 1px 0 rgb(240, 235, 235);
 }
-body{
-background-image: url(../Images/back.jpg);
+
+body {
+    background-image: url(../Images/back.jpg);
     background-size: ;
-    
+
+}
+
+/*========================================================================================*/
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 45px;
+        text-shadow:
+            -2px -2px 0 rgb(8, 8, 8),
+            2px -2px 0 rgb(7, 7, 7),
+            -2px 2px 0 rgb(5, 5, 5),
+            2px 2px 0 rgb(5, 0, 0);
+    }
+
+    .cartoonButton {
+        font-size: smaller;
+    }
+
+    #add {
+        font-size: large;
+        text-shadow:
+            -1px -1px 0 rgb(8, 8, 8),
+            1px -1px 0 rgb(7, 7, 7),
+            -1px 1px 0 rgb(5, 5, 5),
+            1px 1px 0 rgb(5, 0, 0);
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .bttn {
+        font-size: smaller;
+    }
+
+    #gifs-appear-here {
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .gif {
+        max-width: 100%;
+    }
+
 }
