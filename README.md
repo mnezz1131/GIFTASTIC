@@ -3,7 +3,10 @@ Giftastic is a fun app where you can query the GIPHY Api for your favorite carto
 ![Image of Giftastic](https://i.imgur.com/zyly6Oh.png)
 
 ## Tech/Framework Used
-In order to create this dynamic website, Javascript, Jquery and Html were used.
+* HTML5
+* CSS3 
+* Javascript 
+* JQuery 
 
 *[Link to Giphy] (https://developers.giphy.com/)
 
