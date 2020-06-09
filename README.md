@@ -7,4 +7,4 @@ In order to create this dynamic website, Javascript, Jquery and Html were used.
 
 *[Link to Giphy] (https://developers.giphy.com/)
 
-![Image of Giftastic](https://i.imgur.com/zyly6Oh.png)https://mnezz1131.github.io/GIFTASTIC/
+https://mnezz1131.github.io/GIFTASTIC/
